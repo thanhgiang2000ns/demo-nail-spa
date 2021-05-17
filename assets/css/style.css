@@ -1,0 +1,461 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+/* Use more */
+
+.heading {
+    text-align: center;
+    position: relative;
+}
+
+.heading-head {
+    font-size: 40px;
+    color: var(--black);
+    text-transform: capitalize;
+    margin-bottom: 45px;
+    padding: 45px 0 20px;
+    font-weight: 400;
+    position: relative;
+}
+
+.heading-head::before {
+    content: "";
+    position: absolute;
+    background-color: var(--grey);
+    bottom: 0;
+    left: 50%;
+    height: 1px;
+    width: 100px;
+    transform: translateX(-50%);
+
+}
+
+.heading-des {
+    font-size: 20px;
+    color: var(--grey);
+    padding-bottom: 50px;
+}
+
+/* Header */
+
+
+.nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 70px;
+    height: 90px;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+
+.nav-list {
+    display: flex;
+
+}
+
+.nav-item {
+    list-style: none;
+    padding-left: 35px;
+    font-size: 18px;
+    color: var(--white);
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    color: var(--pink);
+}
+
+.banner {
+    position: relative;
+}
+
+.banner-img {
+    height: 360px;
+    width: 100%;
+}
+
+.banner-head {
+    position: absolute;
+    bottom: 100px;
+    left: 75px;
+    font-size: 50px;
+    font-weight: 700;
+    color: var(--pink);
+}
+
+.banner-head:hover {
+    cursor: pointer;
+    color: #f3880a;
+}
+
+/* Content */
+
+.content {
+    background-image: url(http://nailsalon3.tittac.net/wp-content/uploads/2019/08/background-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box, padding-box;
+}
+
+.services {
+    padding: 70px 0;
+    background-color: var(--background-color);
+    display: block;
+}   
+
+.services-head {
+    padding-bottom: 70px;
+}
+
+.services-head-text {
+    padding: 0 50px;
+    text-align: center;
+    font-size: 20px;
+    color: var(--grey);
+    line-height: 1.4;
+}
+
+.services-list {
+    display: block;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-item {
+    background-color: var(--white);
+    box-shadow: 1px 1px 10px var(--grey);
+}
+
+.services-item:hover {
+    transform: scale(1.01);
+}
+
+.services-img {
+    width: 100%;
+}
+
+.services-name {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.services-name:hover {
+    color: var(--pink);
+    cursor: pointer;
+}
+
+.services-about {
+    font-size: 18px;
+    color: var(--grey);
+    padding: 25px 25px 70px 25px;
+    line-height: 1.4;    
+}
+
+.services-more-link {
+    width: 100%;
+    height: 100%;
+}
+
+
+.services-more {
+    display: block;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--pink);
+    width: 150px;
+    height: auto;
+    padding: 15px 0;
+    border: 1px solid transparent;
+    transition: all 0.2s; 
+    text-align: center;
+}
+
+
+
+.services-more:hover {
+    background-color: var(--white);
+    border: 1px solid var(--pink);
+    color: var(--pink);
+}
+
+.services-more-text {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+
+/* Promotional */
+
+.promotional-section {
+
+    background-color: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 100px 0;
+}
+
+.promotional-section__head {
+    font-size: 50px;
+    color: var(--white);
+    margin-bottom: 42px;
+    text-transform: uppercase;
+}
+
+.promotional-section__des {
+    padding: 0 200px 40px;
+    font-size: 32px;
+    color: var(--white);
+}
+
+.promotional-section__link {
+    margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    width: 250px;
+    height: 72px;
+    background-color: var(--pink);
+    border: 1px solid transparent;
+    color: var(--white);
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 20px;
+    transition: all 0.2s;
+}
+
+.promotional-section__link:hover {
+    border: 1px solid var(--pink);
+    background-color: transparent;
+
+}
+
+/* Our works */
+.our-works {
+    background-color: var(--white);
+}
+
+.our-works__product {
+    position: relative;
+    margin-bottom: 20px;
+    
+}
+
+.products {
+    box-shadow: 1px 1px 10px var(--grey);
+}
+
+
+.products-img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.products:hover  .our-works__detail,
+.products:active  .our-works__detail {
+    display: block;
+}
+
+
+.our-works__detail {
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 12px;
+    right: 12px;
+    bottom: 0;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(2, 4, 100, 0.8);
+    display: none;
+    animation: fadeIn ease 0.2s forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+     
+    to {
+        opacity: 1;
+    }
+}
+
+.our-works__detail-head {
+    color: var(--white);
+    font-size: 25px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+
+.our-works__detail-des {
+    padding: 10px 40px 60px;
+    font-size: 18px;
+    color: var(--white);
+    line-height: 1.4;
+}
+
+.our-works__detail-link {
+
+    margin: 0 auto;
+    text-decoration: none;
+    display: block;
+    width: 150px;
+    background-color: var(--pink);
+    border: 1px solid transparent;
+    color: var(--white);
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 10px 20px;
+    transition: all 0.2s;
+    
+}
+
+.our-works__detail-link:hover {
+    border: 1px solid var(--pink);
+    background-color: transparent;
+
+}
+
+/* Our Price */
+
+.our-price-head {
+    color: var(--white);
+}
+.heading-our-price > .heading-head::before {
+    background-color: var(--white);
+}
+
+.our-price__service {
+
+    text-align: center;
+    margin-bottom: 40px;
+    height: 340px;
+  
+}
+
+.our-price__service--wrap {
+    background-color: var(--white);
+    padding: 40px 10px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.our-price__service--wrap:hover {
+    transform: scale(1.01);
+}
+
+.our-price__service-icon {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.our-price__service-name {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--black);
+    margin-bottom: 10px;
+
+}
+
+.our-price__service-name:hover {
+    color: var(--pink);
+}
+
+.our-price__service-des {
+    padding: 0 30px;
+}
+
+/* Map & Contact */
+
+.info {
+    display: flex;
+    background-color: var(--white);
+}
+
+
+.info-contact {
+    flex: 1;
+    padding: 40px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+.info-contact__address-text {
+    font-size: 28px;
+    color: var(--grey);
+}
+
+.info-contact__icon {
+    display: flex;
+    margin-bottom: 30px;
+    align-items: center;
+}
+
+.info-contact__icon-address,
+.info-contact__icon-mail,
+.info-contact__icon-tel {
+    font-size: 20px;
+    color: sandybrown;
+    margin-right: 20px;
+}
+
+
+.info-contact__icon-address:hover,
+.info-contact__icon-mail:hover,
+.info-contact__icon-tel:hover {
+   transform: scale(1.1);
+}
+
+.info-contact__icon-text {
+    text-decoration: none;
+    font-size: 20px;
+    color: var(--grey);
+    line-height: 20px;
+}
+
+.info-contact__icon-text:hover {
+    text-decoration: underline;
+    color: var(--pink);
+    transform: scale(1.01);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--black);
+    color: var(--grey);
+    width: 100%;
+    height: 70px;
+}
+
+.footer-text {
+    line-height: 70px;
+}
